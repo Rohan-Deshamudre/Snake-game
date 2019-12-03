@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import lombok.Getter;
 import lombok.Setter;
@@ -32,10 +33,11 @@ public class LoginController {
 
     @FXML
     @Getter @Setter public TextField loginUsername;
-    @Getter @Setter public TextField loginPassword;
+    @Getter @Setter public PasswordField loginPassword;
     @Getter @Setter public TextField registerUsername;
-    @Getter @Setter public TextField registerPassword;
-    @Getter @Setter public TextField confirmPassword;
+    @Getter @Setter public PasswordField registerPassword;
+    @Getter @Setter public PasswordField confirmPassword;
+
 
     @Getter @Setter private DBconnect database = new DBconnect();
 
